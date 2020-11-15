@@ -152,7 +152,7 @@
 								alt="@orinayo"
 								width="20"
 								height="20"
-								class="inline-block header-user-avatar"
+								class="inline-block user-avatar"
 								src="https://avatars1.githubusercontent.com/u/32208591?s=40&v=4"
 							/>
 							&nbsp;orinayo
@@ -313,7 +313,7 @@
 								alt="@orinayo"
 								width="20"
 								height="20"
-								class="header-user-avatar inline-block"
+								class="user-avatar inline-block"
 								src="https://avatars2.githubusercontent.com/u/32208591?s=60&v=4"
 							/>
 							<span class="dropdown-caret"> </span>
@@ -335,7 +335,9 @@
 							<div
 								class="user-status-container leading-tight text-xs px-4 whitespace-normal"
 							>
-								<div class="rounded-md py-1 px-2 mt-2">
+								<div
+									class="header-user-status-container rounded-md py-1 px-2 mt-2"
+								>
 									<details>
 										<summary
 											class="btn-link w-full"
@@ -440,7 +442,7 @@
 							<div class="relative">
 								<button
 									type="button"
-									class="dropdown-item btn-link w-full text-left"
+									class="btn-link dropdown-item w-full text-left"
 									role="menuitem"
 								>
 									Feature preview
@@ -616,9 +618,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="px-4 container mx-auto page-content">
-					<div class="flex flex-col mx-2 page-content-container">
-						<div class="page-content-container-item">
+				<div class="px-4 container mx-auto content">
+					<div class="flex flex-col mx-2 content-container">
+						<div class="content-container-item">
 							<div>
 								<div
 									class="fixed pointer-events-none opacity-0 break-all hidden sticky-user-profile"
@@ -643,15 +645,364 @@
 											<strong>orinayo</strong>
 										</span>
 									</div>
-                                </div>
-                                <div class="flex items-center mb-6 page-content-user-profile clearfix">
-                                    <div class="relative inline-block mr-4 flex-shrink-0 page-content-avatar-container">
-
-                                    </div>
-                                </div>
+								</div>
+								<div
+									class="flex items-center mb-6 content-user-profile clearfix"
+								>
+									<div
+										class="relative inline-block mr-4 flex-shrink-0 content-avatar-container"
+									>
+										<!-- TODO: Add tooltip -->
+										<a
+											class="relative block"
+											aria-label="Change your avatar"
+											href="https://github.com/account"
+										>
+											<img
+												class="user-avatar w-full bg-white h-auto"
+												alt=""
+												width="260"
+												height="260"
+												src="https://avatars2.githubusercontent.com/u/32208591?s=460&u=0ba24303599e7d012308bc26d3e8a4cbb3061514&v=4"
+											/>
+										</a>
+										<div
+											class="whitespace-normal relative user-status-container hidden"
+										>
+											<div
+												class="text-sm absolute mb-8 -ml-10 user-status-circle-badge-container"
+											>
+												<div
+													class="inline-block leading-none p-2 user-status-circle-badge"
+												>
+													<details>
+														<summary
+															class="btn-link no-underline text-gray-lighter align-center w-full"
+															role="button"
+														>
+															<div
+																class="flex items-stretch"
+															>
+																<div
+																	class="inline-flex leading-tight text-xs rounded-full"
+																>
+																	<div
+																		class="content-user-status-emoji-container w-5 h-5 mr-0 flex flex-shrink-0 items-center justify-center"
+																	>
+																		<svg
+																			xmlns="http://www.w3.org/2000/svg"
+																			class="align-text-bottom inline-block"
+																			height="16"
+																			width="16"
+																			aria-hidden="true"
+																			viewBox="0 0 512 512"
+																		>
+																			<title>
+																				Happy
+																			</title>
+																			<circle
+																				cx="184"
+																				cy="232"
+																				r="24"
+																			/>
+																			<path
+																				d="M256.05 384c-45.42 0-83.62-29.53-95.71-69.83a8 8 0 017.82-10.17h175.69a8 8 0 017.82 10.17c-11.99 40.3-50.2 69.83-95.62 69.83z"
+																			/>
+																			<circle
+																				cx="328"
+																				cy="232"
+																				r="24"
+																			/>
+																			<circle
+																				cx="256"
+																				cy="256"
+																				r="208"
+																				fill="none"
+																				stroke="currentColor"
+																				stroke-miterlimit="10"
+																				stroke-width="32"
+																			/>
+																		</svg>
+																	</div>
+																</div>
+																<div
+																	class="text-gray w-0 pt-0 overflow-hidden leading-5 opacity-0 whitespace-normal text-xs min-w-0 user-status-message-wrapper"
+																>
+																	<div
+																		class="inline-block align-top truncate max-w-full text-gray"
+																	>
+																		<span
+																			class="text-gray-lighter"
+																		>
+																			Set
+																			status
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</summary>
+													</details>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div
+										class="static pb-1 pt-1 content-user-name-container"
+									>
+										<h1 class="leading-none pl-2">
+											<span
+												class="block overflow-hidden leading-tight"
+												itemprop="name"
+											>
+												Oluwasegun Orinayo Oyelade
+											</span>
+											<span
+												class="block text-gray-lighter text-xl not-italic font-light leading-6"
+												itemprop="additionalName"
+											>
+												orinayo
+											</span>
+										</h1>
+									</div>
+								</div>
+								<div
+									class="whitespace-normal user-status-container mb-2"
+								>
+									<div class="px-2 py-1 mt-2">
+										<details>
+											<summary
+												class="btn-link no-underline text-gray-lighter align-center w-full"
+												role="menuitem"
+											>
+												<div class="flex items-stretch">
+													<div
+														class="inline-flex leading-tight text-xs rounded-full"
+													>
+														<div
+															class="align-bottom mr-2 flex flex-shrink-0 items-center justify-center"
+														>
+															<svg
+																xmlns="http://www.w3.org/2000/svg"
+																class="align-text-bottom inline-block"
+																height="16"
+																width="16"
+																aria-hidden="true"
+																viewBox="0 0 512 512"
+															>
+																<title>
+																	Happy
+																</title>
+																<circle
+																	cx="184"
+																	cy="232"
+																	r="24"
+																/>
+																<path
+																	d="M256.05 384c-45.42 0-83.62-29.53-95.71-69.83a8 8 0 017.82-10.17h175.69a8 8 0 017.82 10.17c-11.99 40.3-50.2 69.83-95.62 69.83z"
+																/>
+																<circle
+																	cx="328"
+																	cy="232"
+																	r="24"
+																/>
+																<circle
+																	cx="256"
+																	cy="256"
+																	r="208"
+																	fill="none"
+																	stroke="currentColor"
+																	stroke-miterlimit="10"
+																	stroke-width="32"
+																/>
+															</svg>
+														</div>
+													</div>
+													<div
+														class="text-xs min-w-0 text-gray leading-5"
+													>
+														<div
+															class="inline-block align-top truncate text-left max-w-full text-gray"
+														>
+															<span
+																class="text-gray-lighter"
+															>
+																Set status
+															</span>
+														</div>
+													</div>
+												</div>
+											</summary>
+										</details>
+									</div>
+								</div>
+								<div
+									class="overflow-hidden font-sm mb-4 content-user-profile-bio"
+								>
+									<div>
+										Programming and music enthusiast.
+										Impossible to ignore.
+									</div>
+								</div>
+								<div
+									class="flex flex-col content-user-profile-meta"
+								>
+									<div class="order-1">
+										<div class="flex"></div>
+										<!-- TODO: Implement toggle -->
+										<div
+											class="relative flex-auto content-user-edit-profile-form"
+										>
+											<div>
+												<textarea
+													placeholder="Add a bio"
+													aria-label="Add a bio"
+													rows="3"
+													class="py-2 leading-normal mb-1 w-full text-sm text-gray align-middle bg-white px-3"
+												>
+Programming and music enthusiast.Impossible to ignore.
+												</textarea
+												>
+											</div>
+											<div class="flex mt-2 items-center">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="align-text-bottom inline-block"
+													height="16"
+													width="16"
+													aria-hidden="true"
+													viewBox="0 0 512 512"
+												>
+													<title>Business</title>
+													<path
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+														d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zM320 192h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"
+													/>
+													<path
+														d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"
+													/>
+													<ellipse
+														cx="256"
+														cy="176"
+														rx="15.95"
+														ry="16.03"
+														transform="rotate(-45 255.99 175.996)"
+													/>
+													<path
+														d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zM400 320a16 16 0 1016 16 16 16 0 00-16-16zM400 240a16 16 0 1016 16 16 16 0 00-16-16zM336 400a16 16 0 1016 16 16 16 0 00-16-16zM336 320a16 16 0 1016 16 16 16 0 00-16-16zM336 240a16 16 0 1016 16 16 16 0 00-16-16z"
+													/>
+												</svg>
+												<input
+													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													placeholder="Company"
+													aria-label="Company"
+													value="Wellnite"
+												/>
+											</div>
+											<div class="flex mt-2 items-center">
+												<svg
+													class="align-text-bottom inline-block"
+													height="16"
+													width="16"
+													aria-hidden="true"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 512 512"
+												>
+													<title>Location</title>
+													<path
+														d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+													/>
+													<circle
+														cx="256"
+														cy="192"
+														r="48"
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+													/>
+												</svg>
+												<input
+													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													placeholder="Location"
+													aria-label="Location"
+													value="Nigeria"
+												/>
+											</div>
+											<div class="flex mt-2 items-center">
+												<svg
+													style="width: 16px"
+													class="align-text-bottom inline-block"
+													viewBox="0 0 16 16"
+													version="1.1"
+													width="16"
+													height="16"
+													aria-hidden="true"
+												>
+													<path
+														fill-rule="evenodd"
+														d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+													></path>
+												</svg>
+												<input
+													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													placeholder="Website"
+													aria-label="Website"
+													value="www.orinayooyelade.com"
+												/>
+											</div>
+											<div class="flex mt-2 items-center">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="align-text-bottom inline-block"
+													width="16"
+													height="16"
+													aria-hidden="true"
+													viewBox="0 0 512 512"
+												>
+													<title>Logo Twitter</title>
+													<path
+														d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+													/>
+												</svg>
+												<input
+													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													placeholder="Twitter username"
+													aria-label="Twitter username"
+													value="orinayooyelade"
+												/>
+											</div>
+											<div
+												class="my-4 user-edit-profile-form-buttons"
+											>
+												<button
+													type="button"
+													class="px-3 text-sm leading-5 btn text-white bg-green"
+												>
+													Save
+												</button>
+												<button
+													type="reset"
+													class="btn px-3 text-sm leading-5"
+												>
+													Cancel
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="page-content-container-item"></div>
+						<div class="content-container-item"></div>
 					</div>
 				</div>
 			</div>
