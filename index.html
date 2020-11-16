@@ -4,21 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="./normalize.css" />
+		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<body class="text-sm text-gray bg-white">
+	<body class="text-sm text-gray-600 bg-white">
 		<div class="relative">
 			<header
-				class="text-sm text-gray-light-m bg-gray items-center flex flex-wrap p-4 z-30 leading-normal"
+				class="text-sm text-gray-500-m bg-gray items-center flex flex-wrap p-4 z-30 leading-normal"
 				role="banner"
 			>
 				<div class="header-item hidden -my-1">
-					<a
-						href="https://github.com"
-						aria-label="Homepage"
-						class="header-link"
-					>
+					<a aria-label="Homepage" class="header-link">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="align-middle inline-block"
@@ -104,15 +100,10 @@
 						class="flex flex-col self-stretch"
 						aria-label="Global navigation"
 					>
-						<a
-							href="https://github.com/dashboard"
-							aria-label="Homepage"
-							class="header-link block"
-						>
+						<a aria-label="Homepage" class="header-link block">
 							Dashboard
 						</a>
 						<a
-							href="https://github.com/pulls"
 							aria-label="Pull requests you created"
 							class="header-link mr-0"
 						>
@@ -121,7 +112,6 @@
 							>s
 						</a>
 						<a
-							href="https://github.com/issues"
 							aria-label="Issues you created"
 							class="header-link mr-0"
 						>
@@ -129,33 +119,26 @@
 						</a>
 						<div class="flex relative">
 							<a
-								href="https://github.com/marketplace"
 								aria-label="Github marketplace"
 								class="header-link mr-0 flex-auto"
 							>
 								Marketplace
 							</a>
 						</div>
-						<a
-							href="https://github.com/explore"
-							aria-label="Explore"
-							class="header-link mr-0"
-						>
+						<a aria-label="Explore" class="header-link mr-0">
 							Explore
 						</a>
 						<a
-							href="https://github.com/orinayo"
 							aria-label="Your profile"
-							class="header-link block mr-0"
+							class="header-link dynamic-login block mr-0"
 						>
 							<img
-								alt="@orinayo"
+								alt=""
 								width="20"
 								height="20"
-								class="inline-block user-avatar"
-								src="https://avatars1.githubusercontent.com/u/32208591?s=40&v=4"
+								class="inline-block user-avatar dynamic-avatar"
+								src="placeholder.png"
 							/>
-							&nbsp;orinayo
 						</a>
 						<div class="logout">
 							<button
@@ -185,11 +168,7 @@
 					</nav>
 				</div>
 				<div class="header-item flex-auto mr-0 relative justify-center">
-					<a
-						class="header-link"
-						href="https://github.com/"
-						aria-label="Homepage"
-					>
+					<a class="header-link" aria-label="Homepage">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							class="align-middle inline-block"
@@ -265,35 +244,20 @@
 							</svg>
 							<span class="dropdown-caret"> </span>
 						</summary>
-						<div role="menu" class="details-menu bg-white">
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/new"
+						<div role="menu" class="header-details-menu bg-white">
+							<a role="menuitem" class="dropdown-item"
 								>New repository</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/new/import"
+							<a role="menuitem" class="dropdown-item"
 								>Import repository</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://gist.github.com/"
+							<a role="menuitem" class="dropdown-item"
 								>New gist</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/organizations/new"
+							<a role="menuitem" class="dropdown-item"
 								>New organization</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/new/project"
+							<a role="menuitem" class="dropdown-item"
 								>New project</a
 							>
 						</div>
@@ -310,26 +274,24 @@
 							role="button"
 						>
 							<img
-								alt="@orinayo"
+								alt=""
 								width="20"
 								height="20"
-								class="user-avatar inline-block"
-								src="https://avatars2.githubusercontent.com/u/32208591?s=60&v=4"
+								class="user-avatar dynamic-avatar inline-block"
+								src="placeholder.png"
 							/>
 							<span class="dropdown-caret"> </span>
 						</summary>
-						<div role="menu" class="details-menu bg-white">
+						<div role="menu" class="header-details-menu bg-white">
 							<div class="pb-0 text-size-inherit">
 								<a
 									role="menuitem"
-									class="no-underline py-2 px-4 -mt-1 -mb-2 text-gray block"
-									href="https://github.com/orinayo"
+									class="no-underline py-2 px-4 -mt-1 -mb-2 text-gray-600 block"
 									>Signed in as
 									<strong
-										class="truncate align-top inline-block max-w-full"
-										>orinayo</strong
-									></a
-								>
+										class="truncate align-top dynamic-login inline-block max-w-full"
+									></strong
+								></a>
 							</div>
 							<div role="none" class="menu-divider"></div>
 							<div
@@ -385,13 +347,13 @@
 													</div>
 												</div>
 												<div
-													class="leading-5 text-gray text-xs min-w-0"
+													class="leading-5 text-gray-600 text-xs min-w-0"
 												>
 													<div
-														class="max-w-full text-gray inline-block text-left align-top overflow-hidden ellipsis"
+														class="max-w-full text-gray-600 inline-block text-left align-top overflow-hidden ellipsis"
 													>
 														<span
-															class="text-gray-light"
+															class="text-gray-500"
 															>Set status</span
 														>
 													</div>
@@ -402,40 +364,22 @@
 								</div>
 							</div>
 							<div role="none" class="menu-divider"></div>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/orinayo"
+							<a role="menuitem" class="dropdown-item"
 								>Your profile</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/orinayo?tab=repositories"
+							<a role="menuitem" class="dropdown-item"
 								>Your repositories</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/settings/organizations"
+							<a role="menuitem" class="dropdown-item"
 								>Your organizations</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/orinayo?tab=projects"
+							<a role="menuitem" class="dropdown-item"
 								>Your projects</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/orinayo?tab=stars"
+							<a role="menuitem" class="dropdown-item"
 								>Your stars</a
 							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://gist.github.com/mine"
+							<a role="menuitem" class="dropdown-item"
 								>Your gists</a
 							>
 							<div role="none" class="menu-divider"></div>
@@ -448,16 +392,8 @@
 									Feature preview
 								</button>
 							</div>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://docs.github.com"
-								>Help</a
-							>
-							<a
-								role="menuitem"
-								class="dropdown-item"
-								href="https://github.com/settings/profile"
+							<a role="menuitem" class="dropdown-item">Help</a>
+							<a role="menuitem" class="dropdown-item"
 								>Settings</a
 							>
 							<div class="block">
@@ -490,17 +426,19 @@
 											class="table-cell leading-none w-8 pr-2 align-middle"
 										>
 											<img
-												class="rounded-full"
+												class="rounded-full dynamic-avatar"
 												height="32"
 												width="32"
-												alt="@orinayo"
-												src="https://avatars0.githubusercontent.com/u/32208591?s=88&u=0ba24303599e7d012308bc26d3e8a4cbb3061514&v=4"
+												alt=""
+												src=""
 											/>
 										</span>
 										<span
 											class="table-cell align-middle leading-tight"
 										>
-											<strong>orinayo</strong>
+											<strong
+												class="dynamic-login"
+											></strong>
 										</span>
 									</div>
 								</div>
@@ -510,10 +448,7 @@
 									class="w-full shadow-none flex overflow-x-auto overflow-y-hidden justify-between"
 								>
 									<nav aria-label="user-profile" class="flex">
-										<a
-											class="page-tabs-link"
-											herf="https://github.com/orinayo"
-										>
+										<a class="page-tabs-link">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												class="inline-block align-text-bottom mr-1"
@@ -533,11 +468,9 @@
 											</svg>
 											&nbsp;Overview
 										</a>
-										<a
-											class="page-tabs-link selected"
-											herf="https://github.com/orinayo?tab=repositories"
-										>
+										<a class="page-tabs-link selected">
 											<svg
+												xmlns="http://www.w3.org/2000/svg"
 												class="inline-block align-text-bottom mr-1 selected"
 												height="16"
 												viewBox="0 0 16 16"
@@ -552,16 +485,13 @@
 											</svg>
 											&nbsp;Repositories
 											<span
-												title="47"
-												class="inline-block py-0 text-xs text-center ml-1 text-gray font-medium page-tab-count"
-												>47</span
-											>
+												title=""
+												class="inline-block py-0 text-xs text-center ml-1 text-gray-600 font-medium hidden page-tab-count dynamic-repo-count"
+											></span>
 										</a>
-										<a
-											class="page-tabs-link"
-											herf="https://github.com/orinayo?tab=projects"
-										>
+										<a class="page-tabs-link">
 											<svg
+												xmlns="http://www.w3.org/2000/svg"
 												class="inline-block align-text-bottom mr-1"
 												height="16"
 												viewBox="0 0 16 16"
@@ -576,15 +506,11 @@
 											</svg>
 											&nbsp;Projects
 											<span
-												title="0"
-												class="inline-block py-0 text-xs text-center ml-1 text-gray font-medium page-tab-count"
-												>0</span
-											>
+												title=""
+												class="dynamic-project-count inline-block py-0 text-xs text-center ml-1 text-gray-600 font-medium hidden page-tab-count"
+											></span>
 										</a>
-										<a
-											class="page-tabs-link"
-											herf="https://github.com/orinayo?tab=projects"
-										>
+										<a class="page-tabs-link">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												class="inline-block align-text-bottom mr-1"
@@ -632,17 +558,19 @@
 											class="table-cell leading-none w-8 pr-2 align-middle"
 										>
 											<img
-												class="rounded-full"
+												class="rounded-full dynamic-avatar"
 												height="32"
 												width="32"
-												alt="@orinayo"
-												src="https://avatars0.githubusercontent.com/u/32208591?s=88&u=0ba24303599e7d012308bc26d3e8a4cbb3061514&v=4"
+												alt=""
+												src=""
 											/>
 										</span>
 										<span
 											class="table-cell align-middle leading-tight"
 										>
-											<strong>orinayo</strong>
+											<strong
+												class="dynamic-login"
+											></strong>
 										</span>
 									</div>
 								</div>
@@ -659,11 +587,11 @@
 											href="https://github.com/account"
 										>
 											<img
-												class="user-avatar w-full bg-white h-auto"
+												class="user-avatar dynamic-avatar w-full bg-white h-auto"
 												alt=""
 												width="260"
 												height="260"
-												src="https://avatars2.githubusercontent.com/u/32208591?s=460&u=0ba24303599e7d012308bc26d3e8a4cbb3061514&v=4"
+												src="placeholder.png"
 											/>
 										</a>
 										<div
@@ -677,7 +605,7 @@
 												>
 													<details>
 														<summary
-															class="btn-link no-underline text-gray-lighter align-center w-full"
+															class="btn-link no-underline text-gray-400 align-center w-full"
 															role="button"
 														>
 															<div
@@ -726,13 +654,13 @@
 																	</div>
 																</div>
 																<div
-																	class="text-gray w-0 pt-0 overflow-hidden leading-5 opacity-0 whitespace-normal text-xs min-w-0 user-status-message-wrapper"
+																	class="text-gray-600 w-0 pt-0 overflow-hidden leading-5 opacity-0 whitespace-normal text-xs min-w-0 user-status-message-wrapper"
 																>
 																	<div
-																		class="inline-block align-top truncate max-w-full text-gray"
+																		class="inline-block align-top truncate max-w-full text-gray-600"
 																	>
 																		<span
-																			class="text-gray-lighter"
+																			class="text-gray-400"
 																		>
 																			Set
 																			status
@@ -751,16 +679,14 @@
 									>
 										<h1 class="leading-none pl-2">
 											<span
-												class="block overflow-hidden leading-tight"
+												class="block overflow-hidden dynamic-fullname leading-tight"
 												itemprop="name"
 											>
-												Oluwasegun Orinayo Oyelade
 											</span>
 											<span
-												class="block text-gray-lighter text-xl not-italic font-light leading-6"
+												class="block text-gray-600-400 text-xl not-italic font-light leading-6 dynamic-login"
 												itemprop="additionalName"
 											>
-												orinayo
 											</span>
 										</h1>
 									</div>
@@ -771,7 +697,7 @@
 									<div class="px-2 py-1 mt-2">
 										<details>
 											<summary
-												class="btn-link no-underline text-gray-lighter align-center w-full"
+												class="btn-link no-underline text-gray-400 align-center w-full"
 												role="menuitem"
 											>
 												<div class="flex items-stretch">
@@ -818,13 +744,13 @@
 														</div>
 													</div>
 													<div
-														class="text-xs min-w-0 text-gray leading-5"
+														class="text-xs min-w-0 text-gray-600 leading-5"
 													>
 														<div
-															class="inline-block align-top truncate text-left max-w-full text-gray"
+															class="inline-block align-top truncate text-left max-w-full text-gray-600"
 														>
 															<span
-																class="text-gray-lighter"
+																class="text-gray-400"
 															>
 																Set status
 															</span>
@@ -837,12 +763,7 @@
 								</div>
 								<div
 									class="overflow-hidden text-base mb-4 content-user-profile-bio"
-								>
-									<div>
-										Programming and music enthusiast.
-										Impossible to ignore.
-									</div>
-								</div>
+								></div>
 								<div
 									class="flex flex-col content-user-profile-meta"
 								>
@@ -856,11 +777,8 @@
 													placeholder="Add a bio"
 													aria-label="Add a bio"
 													rows="3"
-													class="py-2 leading-normal mb-1 w-full text-sm text-gray align-middle bg-white px-3"
-												>
-Programming and music enthusiast.Impossible to ignore.
-												</textarea
-												>
+													class="py-2 leading-normal mb-1 w-full text-sm text-gray-600 align-middle bg-white px-3"
+												></textarea>
 											</div>
 											<div class="flex mt-2 items-center">
 												<svg
@@ -895,10 +813,10 @@ Programming and music enthusiast.Impossible to ignore.
 													/>
 												</svg>
 												<input
-													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													class="ml-2 flex-auto text-xs leading-5 text-gray-600 px-3 bg-white"
 													placeholder="Company"
 													aria-label="Company"
-													value="Wellnite"
+													value=""
 												/>
 											</div>
 											<div class="flex mt-2 items-center">
@@ -931,15 +849,15 @@ Programming and music enthusiast.Impossible to ignore.
 													/>
 												</svg>
 												<input
-													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													class="ml-2 flex-auto text-xs leading-5 text-gray-600 px-3 bg-white"
 													placeholder="Location"
 													aria-label="Location"
-													value="Nigeria"
+													value=""
 												/>
 											</div>
 											<div class="flex mt-2 items-center">
 												<svg
-													style="width: 16px"
+													xmlns="http://www.w3.org/2000/svg"
 													class="align-text-bottom inline-block"
 													viewBox="0 0 16 16"
 													version="1.1"
@@ -953,10 +871,10 @@ Programming and music enthusiast.Impossible to ignore.
 													></path>
 												</svg>
 												<input
-													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													class="ml-2 flex-auto text-xs leading-5 text-gray-600 px-3 bg-white"
 													placeholder="Website"
 													aria-label="Website"
-													value="www.orinayooyelade.com"
+													value=""
 												/>
 											</div>
 											<div class="flex mt-2 items-center">
@@ -974,10 +892,10 @@ Programming and music enthusiast.Impossible to ignore.
 													/>
 												</svg>
 												<input
-													class="ml-2 flex-auto text-xs leading-5 text-gray px-3 bg-white"
+													class="ml-2 flex-auto text-xs leading-5 text-gray-600 px-3 bg-white"
 													placeholder="Twitter username"
 													aria-label="Twitter username"
-													value="orinayooyelade"
+													value=""
 												/>
 											</div>
 											<div
@@ -1012,10 +930,10 @@ Programming and music enthusiast.Impossible to ignore.
 										<div class="mt-2 order-1">
 											<div class="mb-4">
 												<a
-													class="whitespace-nowrap no-underline text-gray-lighter"
-													href="https://github.com/orinayo?tab=followers"
+													class="whitespace-nowrap no-underline text-gray-400"
 												>
 													<svg
+														xmlns="http://www.w3.org/2000/svg"
 														class="align-text-bottom inline-block"
 														height="16"
 														viewBox="0 0 16 16"
@@ -1029,21 +947,18 @@ Programming and music enthusiast.Impossible to ignore.
 														></path>
 													</svg>
 													<span
-														class="font-semibold text-gray"
+														class="font-semibold text-gray-600 dynamic-followers"
 													>
-														24
 													</span>
 													followers
 												</a>
 												·
 												<a
-													class="whitespace-nowrap no-underline text-gray-lighter"
-													href="https://github.com/orinayo?tab=following"
+													class="whitespace-nowrap no-underline text-gray-400"
 												>
 													<span
-														class="font-semibold text-gray"
+														class="font-semibold text-gray-600 dynamic-following"
 													>
-														40
 													</span>
 													following
 												</a>
@@ -1053,7 +968,7 @@ Programming and music enthusiast.Impossible to ignore.
 											<li
 												class="truncate content-user-edit-profile-preview-item"
 												itemprop="worksFor"
-												aria-label="Organization: Wellnite"
+												aria-label=""
 											>
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -1088,16 +1003,14 @@ Programming and music enthusiast.Impossible to ignore.
 												</svg>
 												<span>
 													<div
-														class="overflow-hidden ellipsis"
-													>
-														Wellnite
-													</div>
+														class="overflow-hidden ellipsis dynamic-company"
+													></div>
 												</span>
 											</li>
 											<li
 												class="truncate content-user-edit-profile-preview-item"
 												itemprop="homeLocation"
-												aria-label="Home location: Nigeria"
+												aria-label=""
 											>
 												<svg
 													class="align-text-bottom inline-block"
@@ -1127,14 +1040,16 @@ Programming and music enthusiast.Impossible to ignore.
 														stroke-width="32"
 													/>
 												</svg>
-												<span>Nigeria</span>
+												<span
+													class="dynamic-location"
+												></span>
 											</li>
 											<li
 												class="truncate content-user-edit-profile-preview-item"
 												itemprop="url"
 											>
 												<svg
-													style="width: 16px"
+													xmlns="http://www.w3.org/2000/svg"
 													class="align-text-bottom inline-block"
 													viewBox="0 0 16 16"
 													version="1.1"
@@ -1149,10 +1064,8 @@ Programming and music enthusiast.Impossible to ignore.
 												</svg>
 												<a
 													rel="nofollow me"
-													class="text-gray"
-													href="https://www.orinayooyelade.com"
-													>www.orinayooyelade.com</a
-												>
+													class="text-gray-600 dynamic-website"
+												></a>
 											</li>
 											<li
 												class="truncate content-user-edit-profile-preview-item"
@@ -1173,21 +1086,840 @@ Programming and music enthusiast.Impossible to ignore.
 												</svg>
 												<a
 													rel="nofollow me"
-													class="text-gray"
-													href=""
-													>@orinayooyelade</a
-												>
+													class="text-gray-600 dynamic-twitter"
+												></a>
 											</li>
 										</ul>
 									</div>
 								</div>
+								<div
+									class="pt-4 mt-4 clearfix hidden content-user-organizations"
+								>
+									<h2 class="font-semibold text-base mb-2">
+										Organizations
+									</h2>
+								</div>
 							</div>
 						</div>
-						<div class="content-container-item"></div>
+						<div class="content-container-item">
+							<div
+								class="block shadow-none px-4 -mx-4 sticky bg-white overflow-x-auto overflow-y-hidden space-between content-user-profile-nav"
+							>
+								<nav class="flex" aria-label="User profile">
+									<a class="page-tabs-link mr-0">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="inline-block align-text-bottom mr-1"
+											height="16"
+											width="16"
+											aria-hidden="true"
+											viewBox="0 0 512 512"
+										>
+											<title>Book</title>
+											<path
+												d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0116 16v288a16 16 0 01-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0116-16c131.57.59 192 32.84 208 96zM256 160v288"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="32"
+											/>
+										</svg>
+										&nbsp;Overview
+									</a>
+									<a class="page-tabs-link mr-0 selected">
+										<svg
+											class="inline-block align-text-bottom mr-1 selected"
+											height="16"
+											viewBox="0 0 16 16"
+											version="1.1"
+											width="16"
+											aria-hidden="true"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
+											></path>
+										</svg>
+										&nbsp;Repositories
+										<span
+											title=""
+											class="inline-block py-0 text-xs text-center ml-1 text-gray-600 font-medium hidden page-tab-count dynamic-repo-count"
+										></span>
+									</a>
+									<a class="page-tabs-link mr-0">
+										<svg
+											class="inline-block align-text-bottom mr-1"
+											version="1.1"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+											height="16"
+											width="16"
+											aria-hidden="true"
+										>
+											<path
+												fill-rule="evenodd"
+												d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"
+											></path>
+										</svg>
+										&nbsp;Projects
+										<span
+											title=""
+											class="dynamic-project-count inline-block py-0 text-xs text-center ml-1 text-gray-600 font-medium hidden page-tab-count"
+										></span>
+									</a>
+									<a class="page-tabs-link mr-0">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											class="inline-block align-text-bottom mr-1"
+											height="16"
+											width="16"
+											aria-hidden="true"
+											viewBox="0 0 512 512"
+										>
+											<title>Cube</title>
+											<path
+												d="M448 341.37V170.61A32 32 0 00432.11 143l-152-88.46a47.94 47.94 0 00-48.24 0L79.89 143A32 32 0 0064 170.61v170.76A32 32 0 0079.89 369l152 88.46a48 48 0 0048.24 0l152-88.46A32 32 0 00448 341.37z"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="32"
+											/>
+											<path
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="32"
+												d="M69 153.99l187 110 187-110M256 463.99v-200"
+											/>
+										</svg>
+										&nbsp;Packages
+									</a>
+								</nav>
+							</div>
+							<div>
+								<div class="relative">
+									<div class="py-4 content-user-action-bar">
+										<div
+											class="block"
+											aria-label="Repositories"
+											role="search"
+										>
+											<div class="mb-4 flex-auto">
+												<input
+													type="search"
+													placeholder="Find a repository..."
+													aria-label="Find a repository..."
+													autocomplete="off"
+													class="w-full leading-5 text-gray-600 align-middle px-3 bg-white"
+												/>
+											</div>
+											<div class="flex">
+												<details
+													class="mr-2 relative content-details-menu-type-modal"
+												>
+													<summary
+														class="btn"
+														aria-haspopup="true"
+														role="button"
+													>
+														<i
+															class="not-italic font-medium opacity-75"
+														>
+															Type:
+														</i>
+														<span> All </span>
+
+														<span
+															class="dropdown-caret ml-1 opacity-75"
+														></span>
+													</summary>
+													<div
+														role="menu"
+														class="content-details-menu"
+													>
+														<div
+															class="content-details-menu-modal"
+														>
+															<header>
+																<span
+																	class="text-sm font-semibold flex-1"
+																>
+																	Select type
+																</span>
+																<button
+																	type="button"
+																>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Close
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M368 368L144 144M368 144L144 368"
+																		/>
+																	</svg>
+																</button>
+															</header>
+															<div>
+																<label
+																	aria-checked="true"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																		checked
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>All</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Public</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Private</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Sources</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Forks</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Archived</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="type"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Mirrors</span
+																	>
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+												<details
+													class="relative flex-auto content-details-menu-language-modal"
+												>
+													<summary
+														class="btn"
+														aria-haspopup="true"
+														role="button"
+													>
+														<i
+															class="not-italic font-medium opacity-75"
+														>
+															Language:
+														</i>
+														<span> All </span>
+														<span
+															class="ml-1 opacity-75 dropdown-caret"
+														></span>
+													</summary>
+													<div
+														role="menu"
+														class="content-details-menu"
+													>
+														<div
+															class="content-details-menu-modal"
+														>
+															<header>
+																<span
+																	class="text-sm font-semibold flex-1"
+																>
+																	Select
+																	language
+																</span>
+																<button
+																	type="button"
+																>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Close
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M368 368L144 144M368 144L144 368"
+																		/>
+																	</svg>
+																</button>
+															</header>
+															<div>
+																<label
+																	aria-checked="true"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																		checked
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>All</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>HTML</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>TypeScript</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>CSS</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>JavaScript</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Dart</span
+																	>
+																</label>
+																<label
+																	aria-checked="false"
+																	role="menuitemradio"
+																	tabindex="0"
+																	class="content-details-menu-item"
+																>
+																	<input
+																		type="radio"
+																		name="language"
+																		hidden
+																	/>
+																	<svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		class="inline-block align-text-bottom"
+																		height="16"
+																		width="16"
+																		aria-hidden="true"
+																		viewBox="0 0 512 512"
+																	>
+																		<title>
+																			Checkmark
+																		</title>
+																		<path
+																			fill="none"
+																			stroke="currentColor"
+																			stroke-linecap="round"
+																			stroke-linejoin="round"
+																			stroke-width="32"
+																			d="M416 128L192 384l-96-96"
+																		/>
+																	</svg>
+																	<span
+																		class="font-normal"
+																		>Scala</span
+																	>
+																</label>
+															</div>
+														</div>
+													</div>
+												</details>
+												<a
+													class="align-center ml-4 btn text-white bg-green"
+												>
+													<svg
+														class="inline-block align-text-bottom mr-0"
+														height="16"
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 16 16"
+														version="1.1"
+														width="16"
+														aria-hidden="true"
+													>
+														<path
+															fill-rule="evenodd"
+															d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
+														></path>
+													</svg>
+													New
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<ul
+										class="content-repository-container"
+									></ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+		<footer class="container mx-auto px-4" role="contentinfo">
+			<div
+				class="relative flex text-xs pt-10 pb-2 mt-10 justify-center text-gray-400 flex-wrap"
+			>
+				<a aria-label="Homepage" title="Github" class="hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="align-text-bottom inline-block"
+						height="24"
+						width="24"
+						viewBox="0 0 512 512"
+					>
+						<title>Logo Github</title>
+						<path
+							d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+						/>
+					</svg>
+				</a>
+				<ul class="list-none flex mb-2 justify-center flex-wrap w-full">
+					<li class="mr-4">&copy; 2020 Github, Inc.</li>
+					<li class="mr-4">
+						<a>Terms</a>
+					</li>
+					<li class="mr-4"><a>Privacy</a></li>
+					<li class="mr-4"><a>Security</a></li>
+					<li class="mr-4"><a>Status</a></li>
+					<li class="mr-4"><a>Help</a></li>
+					<li class="mr-4"><a>Contact GitHub</a></li>
+					<li class="mr-4"><a>Pricing</a></li>
+					<li class="mr-4"><a>API</a></li>
+					<li class="mr-4"><a>Training</a></li>
+					<li class="mr-4"><a>Blog</a></li>
+					<li class="mr-4"><a>About</a></li>
+				</ul>
+			</div>
+			<div class="flex pb-10 justify-center"></div>
+		</footer>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
