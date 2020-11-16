@@ -619,7 +619,7 @@
 					</div>
 				</div>
 				<div class="px-4 container mx-auto content">
-					<div class="flex flex-col mx-2 content-container">
+					<div class="flex flex-col -mx-2 content-container">
 						<div class="content-container-item">
 							<div>
 								<div
@@ -836,7 +836,7 @@
 									</div>
 								</div>
 								<div
-									class="overflow-hidden font-sm mb-4 content-user-profile-bio"
+									class="overflow-hidden text-base mb-4 content-user-profile-bio"
 								>
 									<div>
 										Programming and music enthusiast.
@@ -848,9 +848,8 @@
 								>
 									<div class="order-1">
 										<div class="flex"></div>
-										<!-- TODO: Implement toggle -->
 										<div
-											class="relative flex-auto content-user-edit-profile-form"
+											class="hidden relative flex-auto content-user-edit-profile-form"
 										>
 											<div>
 												<textarea
@@ -998,6 +997,188 @@ Programming and music enthusiast.Impossible to ignore.
 												</button>
 											</div>
 										</div>
+									</div>
+									<div
+										class="flex flex-col content-user-edit-profile-preview"
+									>
+										<div>
+											<button
+												type="button"
+												class="mb-4 btn block w-full text-center"
+											>
+												Edit profile
+											</button>
+										</div>
+										<div class="mt-2 order-1">
+											<div class="mb-4">
+												<a
+													class="whitespace-nowrap no-underline text-gray-lighter"
+													href="https://github.com/orinayo?tab=followers"
+												>
+													<svg
+														class="align-text-bottom inline-block"
+														height="16"
+														viewBox="0 0 16 16"
+														version="1.1"
+														width="16"
+														aria-hidden="true"
+													>
+														<path
+															fill-rule="evenodd"
+															d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"
+														></path>
+													</svg>
+													<span
+														class="font-semibold text-gray"
+													>
+														24
+													</span>
+													followers
+												</a>
+												·
+												<a
+													class="whitespace-nowrap no-underline text-gray-lighter"
+													href="https://github.com/orinayo?tab=following"
+												>
+													<span
+														class="font-semibold text-gray"
+													>
+														40
+													</span>
+													following
+												</a>
+											</div>
+										</div>
+										<ul class="list-none">
+											<li
+												class="truncate content-user-edit-profile-preview-item"
+												itemprop="worksFor"
+												aria-label="Organization: Wellnite"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="align-text-bottom inline-block"
+													height="16"
+													width="16"
+													aria-hidden="true"
+													viewBox="0 0 512 512"
+												>
+													<title>Business</title>
+													<path
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+														d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zM320 192h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"
+													/>
+													<path
+														d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"
+													/>
+													<ellipse
+														cx="256"
+														cy="176"
+														rx="15.95"
+														ry="16.03"
+														transform="rotate(-45 255.99 175.996)"
+													/>
+													<path
+														d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zM400 320a16 16 0 1016 16 16 16 0 00-16-16zM400 240a16 16 0 1016 16 16 16 0 00-16-16zM336 400a16 16 0 1016 16 16 16 0 00-16-16zM336 320a16 16 0 1016 16 16 16 0 00-16-16zM336 240a16 16 0 1016 16 16 16 0 00-16-16z"
+													/>
+												</svg>
+												<span>
+													<div
+														class="overflow-hidden ellipsis"
+													>
+														Wellnite
+													</div>
+												</span>
+											</li>
+											<li
+												class="truncate content-user-edit-profile-preview-item"
+												itemprop="homeLocation"
+												aria-label="Home location: Nigeria"
+											>
+												<svg
+													class="align-text-bottom inline-block"
+													height="16"
+													width="16"
+													aria-hidden="true"
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 512 512"
+												>
+													<title>Location</title>
+													<path
+														d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+													/>
+													<circle
+														cx="256"
+														cy="192"
+														r="48"
+														fill="none"
+														stroke="currentColor"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="32"
+													/>
+												</svg>
+												<span>Nigeria</span>
+											</li>
+											<li
+												class="truncate content-user-edit-profile-preview-item"
+												itemprop="url"
+											>
+												<svg
+													style="width: 16px"
+													class="align-text-bottom inline-block"
+													viewBox="0 0 16 16"
+													version="1.1"
+													width="16"
+													height="16"
+													aria-hidden="true"
+												>
+													<path
+														fill-rule="evenodd"
+														d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+													></path>
+												</svg>
+												<a
+													rel="nofollow me"
+													class="text-gray"
+													href="https://www.orinayooyelade.com"
+													>www.orinayooyelade.com</a
+												>
+											</li>
+											<li
+												class="truncate content-user-edit-profile-preview-item"
+												itemprop="twitter"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="align-text-bottom inline-block"
+													width="16"
+													height="16"
+													aria-hidden="true"
+													viewBox="0 0 512 512"
+												>
+													<title>Logo Twitter</title>
+													<path
+														d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+													/>
+												</svg>
+												<a
+													rel="nofollow me"
+													class="text-gray"
+													href=""
+													>@orinayooyelade</a
+												>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
