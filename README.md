@@ -13,6 +13,7 @@ Using the GraphQL GitHub API (https://developer.github.com/v4/explorer/), I recr
 
 ## How to use
 1. Clone the repo
+2. Run with live-server or serve
 
 ## Possible improvements
 Tooltip on hover of notification and avatar. Set status modal
