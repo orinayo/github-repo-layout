@@ -1195,6 +1195,10 @@ footer > div:first-child a {
 	height: 3rem;
 }
 
+.h-full {
+	height: 100%;
+}
+
 .shadow-none {
 	box-shadow: none;
 }
