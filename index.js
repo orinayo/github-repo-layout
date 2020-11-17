@@ -281,7 +281,6 @@ const setOrganizations = ({organizationsArr}) => {
 	userOrganizationsContainer.appendChild(frag);
 };
 
-console.log(env, GITHUB_PAT);
 fetch('https://api.github.com/graphql', {
 	method: 'POST',
 	headers: {
