@@ -702,7 +702,8 @@ const createRepoStarButton = ({login, repoName}) => {
 	const textRightDiv = document.createElement('div');
 	textRightDiv.classList.add('text-right');
 	const emptyDiv = document.createElement('div');
-	emptyDiv.append(' ');
+	emptyDiv.append('');
+	emptyDiv.classList.add('h-full');
 	const inlineBlockDiv = document.createElement('div');
 	inlineBlockDiv.classList.add('inline-block');
 	const buttonContainer = document.createElement('div');
