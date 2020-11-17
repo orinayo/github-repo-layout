@@ -268,7 +268,8 @@ const setOrganizations = ({organizationsArr}) => {
 			'inline-block',
 			'overflow-hidden',
 			'leading-none',
-			'align-middle'
+			'align-middle',
+			'mr-2'
 		);
 		wrapperElem.appendChild(orgAvatar);
 		return wrapperElem;
@@ -285,7 +286,7 @@ fetch('https://api.github.com/graphql', {
 	method: 'POST',
 	headers: {
 		'Content-Type': 'application/json',
-		Authorization: `bearer GITHUB_PAT`,
+		Authorization: `bearer 894c7d5ffde60ad0a6bf1e14a20fc5e04fc0d994`,
 	},
 	body: JSON.stringify({query}),
 })
@@ -346,26 +347,30 @@ const setHeaderSearchAriaExpandedFalse = () => {
 
 function toggleDesktopSelectedTab(tab) {
 	tab.addEventListener('click', function (event) {
-		if (event.target.classList.contains('selected')) {
+		if (!event.target || event.target.classList.contains('selected')) {
 			return;
 		}
 		const selectedPageTab = document.querySelector(
 			'.all-tabs-container-item .page-tabs-link.selected'
 		);
-		selectedPageTab.classList.remove('selected');
+		if (selectedPageTab) {
+			selectedPageTab.classList.remove('selected');
+		}
 		event.target.classList.add('selected');
 	});
 }
 
 function toggleMobileSelectedTab(tab) {
 	tab.addEventListener('click', function (event) {
-		if (event.target.classList.contains('selected')) {
+		if (!event.target || event.target.classList.contains('selected')) {
 			return;
 		}
 		const selectedPageTab = document.querySelector(
 			'.content-user-profile-nav .page-tabs-link.selected'
 		);
-		selectedPageTab.classList.remove('selected');
+		if (selectedPageTab) {
+			selectedPageTab.classList.remove('selected');
+		}
 		event.target.classList.add('selected');
 	});
 }
