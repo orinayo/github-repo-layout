@@ -281,6 +281,7 @@ const setOrganizations = ({organizationsArr}) => {
 	userOrganizationsContainer.appendChild(frag);
 };
 
+console.log(env, GITHUB_PAT);
 fetch('https://api.github.com/graphql', {
 	method: 'POST',
 	headers: {
@@ -688,7 +689,12 @@ const addRepoLicenseInfo = ({licenseInfo}) => {
 
 const createRepoStarButton = ({login, repoName}) => {
 	const repoStarBtnContainer = document.createElement('div');
-	repoStarBtnContainer.classList.add('flex', 'flex-col', 'justify-around', 'mr-1');
+	repoStarBtnContainer.classList.add(
+		'flex',
+		'flex-col',
+		'justify-around',
+		'mr-1'
+	);
 	const textRightDiv = document.createElement('div');
 	textRightDiv.classList.add('text-right');
 	const inlineBlockDiv = document.createElement('div');
