@@ -16,4 +16,4 @@ Visit the live site https://nifty-leakey-046fa1.netlify.app/ or
 Clone the repo and run with live-server or serve
 
 ## Possible improvements
-Tooltip on hover of notification and avatar. Set status modal
+Minify CSS and JavaScript. Tooltip on hover of notification and avatar. Set status modal
