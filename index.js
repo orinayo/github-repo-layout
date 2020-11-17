@@ -701,8 +701,10 @@ const createRepoStarButton = ({login, repoName}) => {
 	);
 	const textRightDiv = document.createElement('div');
 	textRightDiv.classList.add('text-right');
+	const emptyDiv = document.createElement('div');
+	emptyDiv.append(' ');
 	const inlineBlockDiv = document.createElement('div');
-	textRightDiv.classList.add('inline-block');
+	inlineBlockDiv.classList.add('inline-block');
 	const buttonContainer = document.createElement('div');
 	const starButton = document.createElement('button');
 	starButton.setAttribute('type', 'button');
@@ -736,6 +738,7 @@ const createRepoStarButton = ({login, repoName}) => {
 	inlineBlockDiv.appendChild(buttonContainer);
 	textRightDiv.appendChild(inlineBlockDiv);
 	repoStarBtnContainer.appendChild(textRightDiv);
+	repoStarBtnContainer.appendChild(emptyDiv);
 	return repoStarBtnContainer;
 };
 
