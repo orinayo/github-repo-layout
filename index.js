@@ -285,7 +285,7 @@ fetch('https://api.github.com/graphql', {
 	method: 'POST',
 	headers: {
 		'Content-Type': 'application/json',
-		Authorization: `bearer ${process.env.GITHUB_PAT}`,
+		Authorization: 'bearer 4082f307d90cdfa3b3bc4b7fbc1066c8cc6d39c2',
 	},
 	body: JSON.stringify({query}),
 })
@@ -688,12 +688,7 @@ const addRepoLicenseInfo = ({licenseInfo}) => {
 
 const createRepoStarButton = ({login, repoName}) => {
 	const repoStarBtnContainer = document.createElement('div');
-	repoStarBtnContainer.classList.add(
-		'flex',
-		'flex-col',
-		'justify-around',
-		'mr-1'
-	);
+	repoStarBtnContainer.classList.add('flex', 'flex-col', 'justify-around', 'mr-1');
 	const textRightDiv = document.createElement('div');
 	textRightDiv.classList.add('text-right');
 	const inlineBlockDiv = document.createElement('div');
